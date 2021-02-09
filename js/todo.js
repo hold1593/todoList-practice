@@ -5,6 +5,7 @@ const jsInput = document.querySelector('.js-input');
 const jsTodo = document.querySelector('.js-todo');
 const jsDone = document.querySelector('.js-done');
 const TODO_LS = 'toDos';
+//const toDos = [];
 
 // done 버튼 클릭 시 이벤트 처리
 function doneEvent(doneBtn, delBtn) {
@@ -54,15 +55,15 @@ function handleSubmit(event){
 
 // 저장한 toDOs 불러오기
 function loadTodos() {
-  const toDos = localStorage.getItem(TODO_LS);
-  if(toDos !== null) {
+  const loadToDos = localStorage.getItem(TODO_LS);
+  if(loadToDos !== null) {
     
   }
 }
 
 // main 함수 
 function main() {
-  loadTodos();
+  //loadTodos();
   jsForm.addEventListener('submit', handleSubmit);
   jsTodo.addEventListener('click', clickBtn);
 }
