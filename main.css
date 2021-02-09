@@ -1,0 +1,73 @@
+:root {
+  --color-white : #f5f5f5;
+  --color-grey : #efefef;
+  --color-dark-grey : #6d6d6d;
+  --color-primary : #ffdd71;
+  --color-secondary : #ffc246;
+  --color-black : #1b1b1b;
+}
+* {
+  margin: 0;
+}
+body {
+  background-color: var(--color-white);
+}
+header {
+  padding: 25px;
+  background-color: var(--color-secondary);
+  text-align: center;
+}
+input {
+  width: 40%;
+}
+.listSection{
+  padding: 20px;
+  background-color: var(--color-primary);
+}
+.doneSection{
+  padding: 20px;
+  background-color: var(--color-grey);
+}
+.js-form{
+  margin: 20px;
+  display: none;
+}
+.login{
+  padding: 20px;
+  text-align: center;
+}
+.loginText {
+  font-size: 3em;
+}
+.no-showing{
+  display: none;
+}
+.showing {
+  display: block;
+}
+.js-todo {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.js-todo li {
+  padding: 8px;
+}
+.js-todo button {
+  padding: 4px;
+  margin: 0 0 0 10px;
+  background-color: var(--color-black);
+  border: solid 2px var(--color-secondary);
+  color: var(--color-white);
+}
+.js-done {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: line-through;
+  color: var(--color-dark-grey);
+}
+.js-done li {
+  padding: 5px;
+}
+.no-show{
+  display: none;
+}
